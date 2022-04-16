@@ -1,0 +1,13 @@
+.navClass {
+    background-color: rgba(28, 43, 53, 1);
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin-right: 30px;
+}
+
+nav a:hover {
+    color: aqua;
+}
