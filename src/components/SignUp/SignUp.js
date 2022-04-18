@@ -25,14 +25,14 @@ const SignUp = () => {
     if (user) {
         navigate(from, { replace: true });
     }
-    const handelSubmit = e => {
+    const handelSubmit = async (e) => {
         e.preventDefault();
         if (password !== conPass) {
             setError('Your two passwoard did not match');
             console.log(error);
             return;
         }
-        createUserWithEmailAndPassword(email, password);
+        await createUserWithEmailAndPassword(email, password);
     }
     const [signInWithGoogle] = useSignInWithGoogle(auth);
     const [signInWithGithub] = useSignInWithGithub(auth);
