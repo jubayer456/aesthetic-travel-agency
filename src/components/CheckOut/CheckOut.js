@@ -1,8 +1,14 @@
 import React from 'react';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import auth from '../../init.firebase';
 
 const CheckOut = () => {
+    const [user] = useAuthState(auth);
     const handelSubmit = e => {
-
+        const name = e.target.name.value;
+        const password = e.target.password.value;
+        const phone = e.target.phone.value;
+        const address = e.target.address.value;
     }
     return (
         <div className="container">
@@ -15,7 +21,7 @@ const CheckOut = () => {
                     </div>
                     <div className="input-group">
                         <label htmlFor="email">Your Email</label>
-                        <input type="email" name="email" id="" required />
+                        <input disabled type="email" name="email" id="" value={user?.email} required />
                     </div>
                     <div className="input-group">
                         <label htmlFor="phone">Your Phone</label>
@@ -25,7 +31,7 @@ const CheckOut = () => {
                         <label htmlFor="address">Your Address</label>
                         <input type="text" name="address" id="" required />
                     </div>
-                    <input className='w-50 mx-auto d-block p-2 mb-3' type="submit" value="Add to CheckOut" />
+                    <input className='w-50 mx-auto d-block p-2 m-3' type="submit" value="Add to CheckOut" />
                 </form>
             </div>
         </div>

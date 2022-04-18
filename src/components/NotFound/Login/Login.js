@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { useSignInWithEmailAndPassword, useSignInWithGithub, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import './Login.css';
 import auth from '../../../init.firebase';
 
 const Login = () => {
     const [email, setEmail] = useState('');
-    // const [error, setError] = useState('');
     const [password, setPassword] = useState('');
     const [check, setCheck] = useState(false);
     const navigate = useNavigate();
