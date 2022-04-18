@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { useSignInWithEmailAndPassword, useSignInWithGithub, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import './Login.css';
-import auth from '../../../init.firebase';
+import auth from '../../init.firebase';
+
 
 const Login = () => {
     const [email, setEmail] = useState('');

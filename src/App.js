@@ -4,7 +4,7 @@ import { Route, Routes } from 'react-router-dom';
 import Home from './components/Home/Home/Home';
 import Blogs from './components/Blogs/Blogs';
 import NotFound from './components/NotFound/NotFound';
-import Login from './components/NotFound/Login/Login';
+import Login from './components/Login/Login';
 import SignUp from './components/SignUp/SignUp';
 import CheckOut from './components/CheckOut/CheckOut';
 import RequireAuth from './components/RequireAuth/RequireAuth';
