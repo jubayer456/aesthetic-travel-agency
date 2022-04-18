@@ -57,7 +57,7 @@ const Login = () => {
                             check && navigate('/signUp')
                         }
                     </div>
-                    <input className='w-25 mx-auto d-block p-2 mb-3' type="submit" value="Login" />
+                    <input className='bg-primary text-light border-0 rounded w-25 mx-auto d-block p-2 mb-3' type="submit" value="Login" />
                 </form>
                 {errorElement}
                 <div className='d-flex'>

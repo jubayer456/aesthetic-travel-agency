@@ -63,7 +63,7 @@ const SignUp = () => {
                         }
                     </div>
                     <p style={{ color: 'red' }}>{error}</p>
-                    <input className='w-25 mx-auto d-block p-2 mb-3' type="submit" value="SignUp" />
+                    <input className='bg-primary text-light border-0 rounded w-25 mx-auto d-block p-2 mb-3' type="submit" value="SignUp" />
                 </form>
                 <div className='d-flex'>
                     <hr className='w-100 h-25 bg-primary border ' />
