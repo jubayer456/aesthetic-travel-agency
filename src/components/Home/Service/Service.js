@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Service = ({ service }) => {
-    const { price, name, id, description, img } = service;
+    const { price, name, description, img } = service;
     return (
 
         <div className="col">
@@ -12,9 +12,10 @@ const Service = ({ service }) => {
                     <p className="card-text">Price: {price}</p>
                     <p className="card-text">{description}</p>
                 </div>
-                <div className="card-footer p-0 m-0">
-                    <button className=' w-100 border-0 p-2 bg-primary '>Add to Cart</button>
+                <div className='p-3'>
+                    <button className='w-50 d-block border-0 p-2 bg-primary rounded text-light '>Add to Cart</button>
                 </div>
+
             </div>
         </div>
 

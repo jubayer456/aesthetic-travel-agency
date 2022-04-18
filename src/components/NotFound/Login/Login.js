@@ -23,6 +23,10 @@ const Login = () => {
     if (user) {
         navigate(from, { replace: true });
     }
+    let errorElement;
+    if (error) {
+        errorElement = <p className='text-denger'>Error: {error?.message}</p>
+    }
     const handelSubmit = e => {
         e.preventDefault();
         signInWithEmailAndPassword(email, password);
@@ -54,6 +58,7 @@ const Login = () => {
                     </div>
                     <input className='w-25 mx-auto d-block p-2 mb-3' type="submit" value="Login" />
                 </form>
+                {errorElement}
                 <div className='d-flex'>
                     <hr className='w-100 h-25 bg-primary border ' />
                     <p className='px-2 mt-1'>or</p>

@@ -14,21 +14,21 @@ const Banner = () => {
                 </div>
                 <div className="carousel-inner">
                     <div className="carousel-item active">
-                        <img src={img_1} className="d-block w-100 " alt="..." />
+                        <img style={{ height: '550px' }} src={img_1} className="d-block w-100 " alt="..." />
                         <div className="carousel-caption d-none d-md-block">
                             <h5>Swizerland</h5>
                             <p>Enjoy the best travelling experience with us.</p>
                         </div>
                     </div>
                     <div className="carousel-item">
-                        <img src={img_2} className="d-block w-100" alt="..." />
+                        <img style={{ height: '550px' }} src={img_2} className="d-block w-100" alt="..." />
                         <div className="carousel-caption d-none d-md-block">
                             <h5>Sri Lanka</h5>
                             <p>Travel More to explore the world.</p>
                         </div>
                     </div>
                     <div className="carousel-item">
-                        <img src={img_3} className="d-block w-100" alt="..." />
+                        <img style={{ height: '550px' }} src={img_3} className="d-block w-100" alt="..." />
                         <div className="carousel-caption d-none d-md-block">
                             <h5>Nepal</h5>
                             <p>Travel makes people more powerfull.</p>
