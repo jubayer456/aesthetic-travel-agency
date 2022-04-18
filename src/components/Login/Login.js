@@ -26,7 +26,7 @@ const Login = () => {
     if (user) {
         navigate(from, { replace: true });
     }
-    console.log(error);
+    console.log(user);
     const handelSubmit = e => {
         e.preventDefault();
         signInWithEmailAndPassword(email, password);
